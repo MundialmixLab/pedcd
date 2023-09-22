@@ -1,0 +1,48 @@
+@media print {
+	
+	
+  body * {
+    visibility: hidden;
+  }
+  
+  
+  #print * {
+    visibility: visible;
+  }
+  
+  #formulario {
+	  display: none;
+  }
+  
+  
+
+  
+  #print {
+    position: fixed;
+    left: 0;
+    top: 0;
+	margin-top: 30px;
+  }
+  
+
+  
+  /*td {
+	  padding: 1px 4px 1px 4px;
+  }
+  
+  p#titulorel {
+	  font-size: 1.6em;
+  }
+  
+  table.bordasimples {
+	  margin-top: 1.2em;
+	  width: 100%;
+  }*/
+
+  
+th {
+	box-shadow: 0 0 0 1000px #D3D3D3 inset;
+}
+
+
+}
