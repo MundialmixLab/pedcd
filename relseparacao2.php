@@ -122,7 +122,7 @@ session_start();
             $sqlo2 = "select gg.seqendereco from consinco.mlo_endereco gg where gg.nroempresa = 990 and gg.codrua = '500' and gg.especieendereco = 'D' and gg.seqproduto = ".$seqproduto."";
         }
         $orareq2=oci_parse($conn,$sqlo2);
-		echo $sqlo2;
+		//echo $sqlo2;
         oci_execute($orareq2);
         $seqendpad = 0;
         while ($r2 = oci_fetch_array($orareq2, OCI_ASSOC+OCI_RETURN_NULLS)) {
@@ -254,6 +254,7 @@ session_start();
  //$mpdf->WriteHTML($html);
  //$mpdf->Output();
 
+//echo $html;
 $mpdf = new \Mpdf\Mpdf(['tempDir' => __DIR__ . '/custom/temp/dir/path']);
 $mpdf->SetDisplayMode('fullpage');
 $css = file_get_contents("_css/estilos.css");
