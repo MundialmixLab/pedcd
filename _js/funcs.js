@@ -79,3 +79,29 @@ req.onreadystatechange = function() {
 req.send(null);
  }
 }
+
+function reiniciacoletor() {
+    if(window.XMLHttpRequest) {
+        req = new XMLHttpRequest();
+     }
+     else if(window.ActiveXObject) {
+        req = new ActiveXObject("Microsoft.XMLHTTP");
+     }
+
+    var url = "reiniciacoletor.php";
+
+    req.open("Get", url, true);
+    req.onreadystatechange = function() {
+        if(req.readyState == 4 && req.status == 200) {
+            var resposta = req.responseText;
+            // console.log("6"+resposta.trim()+"6");
+            if(resposta.trim() == 'OK'){
+                alert("Serviço Reiniciado com Sucesso!");
+            } else {
+                alert("Erro: " + resposta);
+            }
+        }
+    }
+    req.send(null);
+
+}

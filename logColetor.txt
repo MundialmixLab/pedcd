@@ -1,0 +1,2 @@
+MAYCONN => 2023-09-27 13:50:11 =>  Comando enviado para reiniciar o serviço no servidor 10.1.211.10
+MAYCONN => 2023-09-27 13:50:18 =>  Comando enviado para reiniciar o serviço no servidor 10.1.211.10

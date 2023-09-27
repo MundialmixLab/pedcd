@@ -40,6 +40,7 @@
 		echo "<li><a href='gerrelsep.php' >Rel Separação</a></li>";
 		echo "<li><a href='manutreq.php' >Manut. Requisições</a></li>";
 		echo "<li><a href='conspedidos.php' >Consulta Requisições</a></li>";
+        echo "<li><a href='coletor.php' >Reiniciar Coletores</a></li>";
 	}
 	if ($niveluser == 3) {
 		echo "<li><a href='pedinc.php' >Nova Requisição</a></li>";
